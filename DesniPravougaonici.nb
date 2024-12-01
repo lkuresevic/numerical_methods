@@ -1,0 +1,17 @@
+Notebook[{Cell[
+BoxData[RowBox[{RowBox[{"desni","[",RowBox[{"f_",",",RowBox[{"{",RowBox[
+{"x_",",","a_",",","b_"}],"}"}],",","n_"}],"]"}],":=",RowBox[{"Module","[",RowBox[
+{RowBox[{"{","}"}],",","\n",RowBox[{RowBox[{"h"," ","="," ",RowBox[{RowBox[{"(",RowBox[
+{"b","-","a"}],")"}],"/","n"}]}],";","\n",RowBox[{"s"," ","="," ","0"}],";","\n",RowBox[
+{"Do","[",RowBox[{RowBox[{"s","+="," ",RowBox[{"f","/.",RowBox[{"x","\[Rule]",RowBox[
+{"a","+",RowBox[{"i","*","h"}]}]}]}]}],","," ",RowBox[{"{",RowBox[{"i",","," ","1",","," ","n"}],"}"}]}],"]"}],";","\n",RowBox[
+{"s","=",RowBox[{RowBox[{"s","*","h"}],"//","N"}]}]}]}],"\n","]"}]}]],"Input",CellLabel -> "In[12]:= ",
+ExpressionUUID -> "95f5227f-bcdb-462c-b0d5-3333a894ac05"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"desni","[",RowBox[{RowBox[{"f","[","x","]"}],",",RowBox[{"{",RowBox[{"x",",","0",",","1"}],"}"}],",","100"}],"]"}]],
+"Input",CellLabel -> "In[13]:= ",ExpressionUUID -> "5a461781-d5d2-480b-80ff-e77ac2a225f8"],Cell[
+BoxData[
+"0.743657398673827`",StandardForm],"Output",CellLabel -> "Out[13]= ",ExpressionUUID -> "39617782-98c5-4fa0-933d-87d1c61aba2b"]},
+Open],ExpressionUUID -> "e4a26f1f-24e2-4f77-87c3-fb52e2932dab"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.1 for Wolfram Cloud 1.69 (July 16, 2024)"]

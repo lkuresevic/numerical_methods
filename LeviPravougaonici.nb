@@ -1,0 +1,25 @@
+Notebook[{Cell[
+BoxData[RowBox[{RowBox[{"levi","[",RowBox[{"f_",",",RowBox[{"{",RowBox[
+{"x_",","," ","a_",",","b_"}],"}"}],","," ","n_"}],"]"}],":=",RowBox[{"Module","[",RowBox[
+{RowBox[{"{","}"}],",","\n",RowBox[{RowBox[{"h"," ","="," ",RowBox[{RowBox[{"(",RowBox[
+{"b","-","a"}],")"}],"/","n"}]}],";","\n",RowBox[{"s"," ","="," ","0"}],";","\n",RowBox[
+{"Do","["," ",RowBox[{RowBox[{"s","+="," ",RowBox[{"(",RowBox[{"f","/.",RowBox[{"x","\[Rule]",RowBox[
+{"a","+",RowBox[{"i","*","h"}]}]}]}],")"}]}],","," ",RowBox[{"{",RowBox[{"i",","," ","0",","," ",RowBox[
+{"n","-","1"}]}],"}"}]}],"]"}],";","\n",RowBox[{"s"," ","="," ",RowBox[{RowBox[{"s","*","h"}],"//","N"}]}]}]}],"\n","]"}]}]],
+"Input",CellLabel -> "In[6]:= ",ExpressionUUID -> "de94a78c-abf1-46a7-87ef-08a1cccdceda"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{"E","^",RowBox[{"-",RowBox[
+{"x","^","2"}]}]}]}]],"Input",CellLabel -> "In[8]:= ",ExpressionUUID -> "7b1da05e-d5a3-43dc-b0d0-5c1b2f40043c"],Cell[
+BoxData[
+SuperscriptBox["\[ExponentialE]",RowBox[{"-",SuperscriptBox["x","2"]}]],StandardForm],
+"Output",CellLabel -> "Out[8]= ",ExpressionUUID -> "cb03eba9-0938-4688-bfa5-9dd5665b832f"]},
+Open],ExpressionUUID -> "811623a0-dd68-43b0-9661-29d1815a88c3"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"levi","[",RowBox[{RowBox[{"f","[","x","]"}],",",RowBox[{"{",RowBox[
+{"x",",","0",",","1"}],"}"}],",","100"}],"]"}]],"Input",CellLabel -> "In[9]:= ",ExpressionUUID -> "5691b148-9ce7-43d5-aec4-870e06afaa16"],Cell[
+BoxData[
+"0.7499786042621126`",StandardForm],"Output",CellLabel -> "Out[9]= ",ExpressionUUID -> "255e35c8-a1c0-4fef-b2e8-c3bef6cd39d5"]},
+Open],ExpressionUUID -> "6add2827-5882-44f1-84f8-c2d680ddd9bd"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.1 for Wolfram Cloud 1.69 (July 16, 2024)"]

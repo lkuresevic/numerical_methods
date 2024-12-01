@@ -1,0 +1,78 @@
+Notebook[{Cell[
+BoxData[RowBox[{RowBox[{RowBox[{"ojkos","[",RowBox[{"f_",",",RowBox[
+{"{",RowBox[{"t_",",","y_",","," ","a_",","," ","b_",","," ","y0_"}],"}"}],","," ","n_"}],"]"}],":=",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{"h",","," ","prib"}],"}"}],",","\n",RowBox[
+{RowBox[{"h"," ","="," ",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","n"}]}],";","\n",RowBox[
+{"prib","=",RowBox[{"{",RowBox[{"{",RowBox[{"a",",","y0"}],"}"}],"}"}]}],";","\n",RowBox[
+{"wnew"," ","="," ","y0"}],";",RowBox[{"tnew","=","a"}],";","\n",RowBox[{"Do","[","\n",RowBox[
+{RowBox[{RowBox[{"wnew"," ","="," ",RowBox[{"wnew","+",RowBox[{"h","*",RowBox[{"(",RowBox[
+{"f","/.",RowBox[{"{",RowBox[{RowBox[{"t","\[Rule]","tnew"}],","," ",RowBox[{"y","\[Rule]","wnew"}]}],"}"}]}],")"}]}]}]}],";","\n",RowBox[
+{"tnew","+=","h"}],";","\n",RowBox[{"prib"," ","="," ",RowBox[{RowBox[{"Append","[",RowBox[
+{"prib",","," ",RowBox[{"{",RowBox[{"tnew",",","wnew"}],"}"}]}],"]"}],"//","N"}]}]}],",","\n",RowBox[
+{"{",RowBox[{"i",",","1",",","n"}],"}"}]}],"]"}],";","\n",RowBox[{"Print","[","prib","]"}],";","\n",RowBox[
+{"ListPlot","[","prib","]"}]}]}],"\n","]"}]}],"\n"}]],"Input",CellLabel -> "In[10]:= ",
+ExpressionUUID -> "d57dd49c-ecc6-404c-a373-31767a12f50b"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"picke","=",RowBox[{"ojkos","[",RowBox[{RowBox[{"f","[",RowBox[{"t",","," ","y"}],"]"}],","," ",RowBox[
+{"{",RowBox[{"t",","," ","y",","," ","0",","," ","1",","," ","1"}],"}"}],","," ","10"}],"]"}]}]],
+"Input",CellLabel -> "In[12]:= ",ExpressionUUID -> "35a63840-a613-4e8e-af2a-eedba5bbc9a1"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"0.`",",","1.`"}],"}"}],",",RowBox[{"{",RowBox[
+{"0.1`",",","1.7`"}],"}"}],",",RowBox[{"{",RowBox[{"0.2`",",","2.2821402758160168`"}],"}"}],",",RowBox[
+{"{",RowBox[{"0.3`",",","2.7748946904169403`"}],"}"}],",",RowBox[{"{",RowBox[{"0.4`",",","3.202127632372603`"}],"}"}],",",RowBox[
+{"{",RowBox[{"0.5`",",","3.5842561987473296`"}],"}"}],",",RowBox[{"{",RowBox[{"0.6`",",","3.939233141843768`"}],"}"}],",",RowBox[
+{"{",RowBox[{"0.7`",",","4.283398205748669`"}],"}"}],",",RowBox[{"{",RowBox[{"0.8`",",","4.632238561283403`"}],"}"}],",",RowBox[
+{"{",RowBox[{"0.9`",",","5.001094091466234`"}],"}"}],",",RowBox[{"{",RowBox[{"1.`",",","5.405840019614282`"}],"}"}]}],"}"}],
+StandardForm],"Print",ExpressionUUID -> "c45f3638-ba54-4104-b27d-c91926d76b16"],Cell[
+BoxData[
+GraphicsBox[{{},{{TagBox[{Directive[PointSize[0.012833333333333334`],RGBColor[0.368417`,
+0.506779`,0.709798`],AbsoluteThickness[2]],PointBox[CompressedData["1:eJxTTMoPSmViYGDgBmIQjQo+2M+aCQI77Y3B4DeUf9JeWvbMoUuOTA4Q8cv2VVUn//w2YnOAyN+0F3GZKv51LqcDxJwH9hrXJzT3reGBqn9sX+4Xs6qnmd8hDQye2QvuW6psrCQI1f/S/tHb+d2Z7UIOZ8+AwBv7Z8425+UYRRxg7vo5a13blPmiDgBjq0ao"]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {None,None},AxesOrigin -> {0,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],Method -> CompressedData["1:eJzNlmtMFFcUxwdFq8FXfQU1Gok2okltDYmNX7xF0BUF2bJg0mpih907cOXu3PXcGWXxm9VEjSZNJb5q6iNRU2v5UNFUU74Y335om4hafIEPkBQjRKNfRD13VpZ1WdbXfPAmO3tm7tzfOfd/T+acjFJRZAzWNE2m4iWfScvo03VXZHPqS0Mju5JJrx4IMLPMSFGz/fHi8+ucBmD1yBpPU1U1iVs2Eo1caug2t+YI2wzoEPZZYU7lQMWzLRHULeaPWzS2e5EH9FA588s806Kg+y0mTKNvkjA/QWMxBYnvQZYzHsWHNByNYmRVFAhbUq+QzKH2iaU6RjHYVPZDY57OJU3gaK5hUL8lkwak9jmflZVz/FkR1Xp5U3kCVEMw9TxuckgsxiuY+QEsFVIuiBBnJpWv7zuBVAZQaggI5tggBRSIAI2Kk4Ab4rqfBqlpJeWq0Ct9SrZszhPMhX3qdpEw410M686MAirLnVSKCPGpgpVKwW2LOvr4WBVl/XvuPgbh5cKKIIb2DNZRiQEeMFtJI0c8QDE8c3IEFwChrT/dm1x9hcCMra3b1n/VSODs2u0LDx1rJj0DKsYUrkCxZcxxvImff2pJy63pbQSer25v2L/5DoEjO2umnJh+0iW+1vxdrfagiYD9e11hSUYzgTE/1t3s7DjnEv/S0SezS9Y9IHD9i92H02uuEsj0pOz7/swFl/j712w8tKwVZe/Y9fnE2gk3CbCN2sFVK9zSv+jojdRbtfcJ7Coc/1v1L9cItI/Z8M+AmSdc4m8ZN/fy2AWYPzWlHT+fvIDnu+dGxmltYKs7fKYgoDnjPmHqz524//r2h6clx+8SqOiYqp3JwnOdNHpG25cH7rikCx33Z197wW3MywmjXqw6hYb2arjDn99UhaUK8zJi1JNXdeKiS/FPm/VZ7vCD/xH4uv7xN57axi7+/y7xRdrewcszHhIoz3nWsuYu5k1D/d+DGs7+4RJ/k7Yi+/iWFgLHHnVeqmy9TCB/5qKlF9MbXeLv82ZNanj4LwFH/ib87pRdP1+XWXntLfnRD7nqVnKxf2DmO/YkykO0RMyzTaercCqsL6hzHp2KWzZIGbpZRntzt3OHGr/GuxuBRmHIYkFEqopToEMFdii9VVH1ep7p53aARgs+enPcYw0GrK2R+p+kQXhzi/WOQY1WzoUA3LduUVksBFerhZm8fxjq5ILEpiDcpXNENZUR0SevE6LzeQHcKrPC3fNeHWLaHh+G7XzlnMv7rEuQVCOcjYYYDSzWuU0/1qhfApPUJTw="],PlotRange -> {{0,1.`},{0,5.405840019614282`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic}},
+ExpressionUUID -> "c284397e-e4c1-453d-9cac-a875431ea89a"],StandardForm],"Output",
+CellLabel -> "Out[12]= ",ExpressionUUID -> "85a72942-f7a6-4771-9ee6-c461af725514"]},
+Open],ExpressionUUID -> "51099ddf-5b26-41d2-b509-f6e63fbedc78"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Canvas","[","%3","]"}]],"Input",NumberMarks -> False,CellLabel -> "In[4]:= ",
+ExpressionUUID -> "033bffdd-ddc2-4297-92d4-363cdc30401f"],Cell[
+BoxData[TemplateBox[
+{TemplateBox[{GraphicsBox[{{},{{TagBox[{Directive[PointSize[0.012833333333333334`],
+RGBColor[0.368417`,0.506779`,0.709798`],AbsoluteThickness[2]],PointBox[{{1.`,0.`},{2.`,1.`}}]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]],TagBox[{Directive[PointSize[
+0.012833333333333334`],RGBColor[0.880722`,0.611041`,0.142051`],AbsoluteThickness[
+2]],PointBox[{{0.1`,1.7`},{0.1`,1.7`}}]},Function[Annotation[Slot[1],"Charting`Private`Tag#2"]]],TagBox[
+{Directive[PointSize[0.012833333333333334`],RGBColor[0.560181`,0.691569`,0.194885`],
+AbsoluteThickness[2]],PointBox[{{0.2`,2.2821402758160168`},{0.2`,2.2821402758160168`}}]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#3"]]],TagBox[{Directive[PointSize[
+0.012833333333333334`],RGBColor[0.922526`,0.385626`,0.209179`],AbsoluteThickness[
+2]],PointBox[{{0.3`,2.7748946904169403`},{0.3`,2.7748946904169403`}}]},Function[Annotation[
+Slot[1],"Charting`Private`Tag#4"]]],TagBox[{Directive[PointSize[0.012833333333333334`],
+RGBColor[0.528488`,0.470624`,0.701351`],AbsoluteThickness[2]],PointBox[{{0.4`,3.202127632372603`},{0.4`,3.202127632372603`}}]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#5"]]],TagBox[{Directive[PointSize[
+0.012833333333333334`],RGBColor[0.772079`,0.431554`,0.102387`],AbsoluteThickness[
+2]],PointBox[{{0.5`,3.5842561987473296`},{0.5`,3.5842561987473296`}}]},Function[Annotation[
+Slot[1],"Charting`Private`Tag#6"]]],TagBox[{Directive[PointSize[0.012833333333333334`],
+RGBColor[0.363898`,0.618501`,0.782349`],AbsoluteThickness[2]],PointBox[{{0.6`,3.939233141843768`},{0.6`,3.939233141843768`}}]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#7"]]],TagBox[{Directive[PointSize[
+0.012833333333333334`],RGBColor[1,0.75`,0],AbsoluteThickness[2]],PointBox[{{0.7`,4.283398205748669`},{0.7`,4.283398205748669`}}]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#8"]]],TagBox[{Directive[PointSize[
+0.012833333333333334`],RGBColor[0.647624`,0.37816`,0.614037`],AbsoluteThickness[2]],PointBox[
+{{0.8`,4.632238561283403`},{0.8`,4.632238561283403`}}]},Function[Annotation[Slot[
+1],"Charting`Private`Tag#9"]]],TagBox[{Directive[PointSize[0.012833333333333334`],
+RGBColor[0.571589`,0.586483`,0.`],AbsoluteThickness[2]],PointBox[{{0.9`,5.001094091466234`},{0.9`,5.001094091466234`}}]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#10"]]],TagBox[{Directive[PointSize[
+0.012833333333333334`],RGBColor[0.915`,0.3325`,0.2125`],AbsoluteThickness[2]],PointBox[
+{{1.`,5.405840019614282`},{1.`,5.405840019614282`}}]},Function[Annotation[Slot[1],
+"Charting`Private`Tag#11"]]]}},{{},{}}},{DefaultBaseStyle -> {"CanvasGraphics"},ImageSize -> Medium,PlotRange -> {{-6.938893903907228`*^-18,1.9999999999999998`},{0.`,5.405840019614282`}},PlotRangePadding -> {{0.041666666666666664`,0.04166666666666674`},{0.1162546240777265`,0.29063656019431594`}},DisplayFunction -> Identity,DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {None,None},AxesOrigin -> {0.`,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],Method -> CompressedData["1:eJzNlmtMFFcUxwdFq8FXfQU1Gok2okltDYmNX7xF0BUF2bJg0mpih907cOXu3PXcGWXxm9VEjSZNJb5q6iNRU2v5UNFUU74Y335om4hafIEPkBQjRKNfRD13VpZ1WdbXfPAmO3tm7tzfOfd/T+acjFJRZAzWNE2m4iWfScvo03VXZHPqS0Mju5JJrx4IMLPMSFGz/fHi8+ucBmD1yBpPU1U1iVs2Eo1caug2t+YI2wzoEPZZYU7lQMWzLRHULeaPWzS2e5EH9FA588s806Kg+y0mTKNvkjA/QWMxBYnvQZYzHsWHNByNYmRVFAhbUq+QzKH2iaU6RjHYVPZDY57OJU3gaK5hUL8lkwak9jmflZVz/FkR1Xp5U3kCVEMw9TxuckgsxiuY+QEsFVIuiBBnJpWv7zuBVAZQaggI5tggBRSIAI2Kk4Ab4rqfBqlpJeWq0Ct9SrZszhPMhX3qdpEw410M686MAirLnVSKCPGpgpVKwW2LOvr4WBVl/XvuPgbh5cKKIIb2DNZRiQEeMFtJI0c8QDE8c3IEFwChrT/dm1x9hcCMra3b1n/VSODs2u0LDx1rJj0DKsYUrkCxZcxxvImff2pJy63pbQSer25v2L/5DoEjO2umnJh+0iW+1vxdrfagiYD9e11hSUYzgTE/1t3s7DjnEv/S0SezS9Y9IHD9i92H02uuEsj0pOz7/swFl/j712w8tKwVZe/Y9fnE2gk3CbCN2sFVK9zSv+jojdRbtfcJ7Coc/1v1L9cItI/Z8M+AmSdc4m8ZN/fy2AWYPzWlHT+fvIDnu+dGxmltYKs7fKYgoDnjPmHqz524//r2h6clx+8SqOiYqp3JwnOdNHpG25cH7rikCx33Z197wW3MywmjXqw6hYb2arjDn99UhaUK8zJi1JNXdeKiS/FPm/VZ7vCD/xH4uv7xN57axi7+/y7xRdrewcszHhIoz3nWsuYu5k1D/d+DGs7+4RJ/k7Yi+/iWFgLHHnVeqmy9TCB/5qKlF9MbXeLv82ZNanj4LwFH/ib87pRdP1+XWXntLfnRD7nqVnKxf2DmO/YkykO0RMyzTaercCqsL6hzHp2KWzZIGbpZRntzt3OHGr/GuxuBRmHIYkFEqopToEMFdii9VVH1ep7p53aARgs+enPcYw0GrK2R+p+kQXhzi/WOQY1WzoUA3LduUVksBFerhZm8fxjq5ILEpiDcpXNENZUR0SevE6LzeQHcKrPC3fNeHWLaHh+G7XzlnMv7rEuQVCOcjYYYDSzWuU0/1qhfApPUJTw="],PlotRange -> {{0.`,2.`},{0,5.405840019614282`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic}}]},
+"CanvasFrame"]},"Canvas"],StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "b0e4d269-953d-41ef-b274-03aa9ebe4518"]},
+Open],ExpressionUUID -> "ae1da076-514b-49ba-b588-25cf2230a150"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.1 for Wolfram Cloud 1.69 (July 16, 2024)"]

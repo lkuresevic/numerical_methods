@@ -1,0 +1,18 @@
+Notebook[{Cell[
+BoxData[RowBox[{RowBox[{"srednji","[",RowBox[{"f_",","," ",RowBox[
+{"{",RowBox[{"x_",","," ","a_",","," ","b_"}],"}"}],","," ","n_"}],"]"}],":=",RowBox[
+{"Module","[",RowBox[{RowBox[{"{","}"}],",","\n",RowBox[{RowBox[{"h"," ","="," ",RowBox[
+{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","n"}]}],";","\n",RowBox[{"s"," ","="," ","0"}],";","\n",RowBox[
+{"Do","[",RowBox[{RowBox[{"s","+=",RowBox[{"(",RowBox[{"f","/.",RowBox[{"x","\[Rule]",RowBox[
+{"a","+",RowBox[{RowBox[{"(",RowBox[{"i","+",RowBox[{"1","/","2"}]}],")"}],"*","h"}]}]}]}],")"}]}],","," ",RowBox[
+{"{",RowBox[{"i",","," ","0",","," ",RowBox[{"n","-","1"}]}],"}"}]}],"]"}],";","\n",RowBox[
+{"s","=",RowBox[{RowBox[{"h","*","s"}],"//","N"}]}]}]}],"\n","]"}]}]],"Input",CellLabel -> "In[15]:= ",
+ExpressionUUID -> "391b4d77-0d3c-40cc-b361-9f32015b5d3a"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"srednji","[",RowBox[{RowBox[{"f","[","x","]"}],",",RowBox[{"{",RowBox[{"x",",","0",",","1"}],"}"}],",","100"}],"]"}]],
+"Input",CellLabel -> "In[16]:= ",ExpressionUUID -> "4b73b6a3-f47e-4c33-b64c-8dabba5ce87a"],Cell[
+BoxData[
+"0.7468271984923197`",StandardForm],"Output",CellLabel -> "Out[16]= ",ExpressionUUID -> "fe5c4c60-d225-42aa-8028-4c867ad34753"]},
+Open],ExpressionUUID -> "a2110761-6159-4705-bf84-a801cd131497"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.1 for Wolfram Cloud 1.69 (July 16, 2024)"]
